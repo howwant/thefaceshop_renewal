@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>더페이스샵</title>
+<!--파비콘-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#67d55b">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+<!--스타일시트-->
+  <link rel="stylesheet" href="./scss/layout.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<!--슬릭슬라이드-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="content">
+      <h1><img src="./img/logo.png" alt="logo"></h1>
+      <nav class="main_nav">
+        <ul class="depth_01">
+          <li><a href="#none">BRAND</a><div class="bg_white"></div>
+            <ul class="depth_02">
+              <li><a href="#none">브랜드 스토리</a></li>
+            </ul></li>
+          <li><a href="#none">SHOP</a><div class="bg_white"></div>
+            <ul class="depth_02">
+              <li><a href="#none">스킨케어</a></li>
+              <li><a href="#none">마스크/팩</a></li>
+              <li><a href="#none">클렌징</a></li>
+              <li><a href="#none">바디케어</a></li>
+              <li><a href="#none">헤어케어</a></li>
+              <li><a href="#none">베이스 메이크업</a></li>
+              <li><a href="#none">아이 메이크업</a></li><br>
+              <li><a href="#none">립 메이크업</a></li>
+              <li><a href="#none">네일</a></li>
+              <li><a href="#none">선케어</a></li>
+              <li><a href="#none">남성</a></li>
+              <li><a href="#none">향수</a></li>
+              <li><a href="#none">뷰티툴즈</a></li>
+              <li><a href="#none">베이비&키즈</a></li>
+              <li><a href="#none">건강식품</a></li>
+            </ul></li>
+          <li><a href="#none">COMMUNITY</a><div class="bg_white"></div>
+            <ul class="depth_02">
+              <li><a href="#none">공지</a></li>
+              <li><a href="#none">리뷰</a></li>
+              <li><a href="#none">이벤트</a></li>
+              <li><a href="#none">MEMBERSHIP</a></li>
+            </ul></li>
+        </ul>
+      </nav>
+      <nav class="util_nav">
+        <ul>
+          <li><a href="#none">LOGIN</a></li>
+          <li><a href="#none">JOIN</a></li>
+          <li><a href="#none">MY SHOPPING </a></li>
+          <li><a href="#none">COUPONS</a></li>
+          <li><a href="#none"><i class="xi-cart-o"></i></a></li>
+          <li><input type="checkbox" id="searh">
+            <label for="searh"><i class="xi-search"></i></label>
+            <div>
+              <div class="margin">
+                <input type="text">
+                <input type="submit" name="제출" value="제출" id="submit">
+                <label for="submit"><i class="xi-search"></i></label>
+              </div>
+            </div>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="mainBanner">
+    <div class="banner_01"></div>
+    <div class="banner_02"></div>
+    <div class="banner_03"></div>
+    <div class="banner_04"></div>
+    <div class="banner_05"></div>
+    <div class="banner_06"></div>
+  </div>
+  <section id="title" class="content">
+    <p>더페이스샵은<br>
+      자연 그대로의 가치를<br>
+      담습니다.
+    </p>
+    <p>"우리의 영감은 지구상의 풍부하고 다양한 자연에서 비롯되었습니다."<br>
+      자연이 주는 지혜와 새로운 아이디어를 위하여 다른 문화와 세계의 다른 곳에도 예의주시하고,<br>
+      이 모든 것들로 다양한 화장품의 '풍요의 뿔'을 정성껏 만들어 natural beauty를 향상시키고 돋보이게 할 것입니다.<br>
+      우리는 자연의 모든 이를 위한 스토리를 지니고 있다고 믿습니다. 더 페이스샵.<br>
+      자연의 이야기를 함께 나눕니다.
+    </p>
+  </section>
+  <section id="teb_menu" class="content">
+    <ul>
+      <li>
+        <input type="radio" name="radio" id="box_01" checked>
+        <label for="box_01">인기상품</label>
+        <div class="ab_box">
+          <h3>더페이스샵의<br>
+            <span>인기상품을</span><br>
+            만나보세요!
+          </h3>
+          <ul>
+            <li>
+              <a href="#none"><img src="./img/item_03.png" alt="NEW 파워 롱클래스팅 선 크림"></a>
+              <div class="icon">
+                <a href="#none">
+                  <img src="./img/icon_03.png" alt="heart">
+                  <img src="./img/icon_02.png" alt="cart">
+                  <img src="./img/icon_01.png" alt="searh">
+                </a>
+              </div>
+              <h5><a href="#none">NEW 파워 롱클래스팅 선 크림</a></h5>
+              <p>18,000원</p>
+              <div class="event_s">
+                <img src="./img/event_title_best.gif" alt="best">
+                <img src="./img/event_title_new.gif" alt="new">
+                <img src="./img/event_title_coupon.gif" alt="coupon">
+                <img src="./img/event_title_today.gif" alt="today">
+              </div>
+            </li>
+            <li>
+              <a href="#none"><img src="./img/item_02.png" alt="네오클래식 옴브 블랙 에센셜 세트"></a>
+              <div class="icon">
+                <a href="#none">
+                  <img src="./img/icon_03.png" alt="heart">
+                  <img src="./img/icon_02.png" alt="cart">
+                  <img src="./img/icon_01.png" alt="searh">
+                </a>
+              </div>
+              <h5><a href="#none">네오클래식 옴브 블랙 에센셜 세트</a></h5>
+              <p>46,000원</p>
+              <div class="event_s">
+                <img src="./img/event_title_best.gif" alt="best">
+                <img src="./img/event_title_new.gif" alt="new">
+                <img src="./img/event_title_coupon.gif" alt="coupon">
+                <img src="./img/event_title_today.gif" alt="today">
+              </div>
+            </li>
+            <li>
+              <a href="#none"><img src="./img/item_04.jpg" alt="내추럴 선 에코 피지잡는 수분 선"></a>
+              <div class="icon">
+                <a href="#none">
+                  <img src="./img/icon_03.png" alt="heart">
+                  <img src="./img/icon_02.png" alt="cart">
+                  <img src="./img/icon_01.png" alt="searh">
+                </a>
+              </div>
+              <h5><a href="#none">내추럴 선 에코 피지잡는 수분 선</a></h5>
+              <p>15,000원</p>
+              <div class="event_s">
+                <img src="./img/event_title_best.gif" alt="best">
+                <img src="./img/event_title_new.gif" alt="new">
+                <img src="./img/event_title_dc.gif" alt="dc">
+                <img src="./img/event_title_coupon.gif" alt="coupon">
+                <img src="./img/event_title_today.gif" alt="today">
+              </div>
+            </li>
+            <li>
+              <a href="#none"><img src="./img/item_01.png" alt="갈아만든 마스크시트"></a>
+              <div class="icon">
+                <a href="#none">
+                  <img src="./img/icon_03.png" alt="heart">
+                  <img src="./img/icon_02.png" alt="cart">
+                  <img src="./img/icon_01.png" alt="searh">
+                </a>
+              </div>
+              <h5><a href="#none">갈아만든 마스크시트</a></h5>
+              <p>1,000원</p>
+              <div class="event_s">
+                <img src="./img/event_title_best.gif" alt="best">
+                <img src="./img/event_title_new.gif" alt="new">
+                <img src="./img/event_title_dc.gif" alt="dc">
+                <img src="./img/event_title_coupon.gif" alt="coupon">
+                <img src="./img/event_title_today.gif" alt="today">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="radio" id="box_02" >
+        <label for="box_02">신상품</label>
+        <div class="ab_box">
+          <h3>더페이스샵의<br>
+            <span>신상품을</span><br>
+            만나보세요!
+          </h3>
+          <ul>
+            <li>
+              <a href="#none"><img src="./img/item_06.jpg" alt="피지잡는수분 기름종이 파우더"></a>
+              <div class="icon">
+                <a href="#none">
+                  <img src="./img/icon_03.png" alt="heart">
+                  <img src="./img/icon_02.png" alt="cart">
+                  <img src="./img/icon_01.png" alt="searh">
+                </a>
+              </div>
+              <h5><a href="#none">피지잡는수분 기름종이 파우더</a></h5>
+              <p>7,000원</p>
+              <div class="event_s">
+                <img src="./img/event_title_best.gif" alt="best">
+                <img src="./img/event_title_new.gif" alt="new">
+                <img src="./img/event_title_coupon.gif" alt="coupon">
+                <img src="./img/event_title_today.gif" alt="today">
+              </div>
+            </li>
+            <li>
+              <a href="#none"><img src="./img/item_07.jpg" alt="피지잡는수분 기름종이 팩트"></a>
+              <div class="icon">
+                <a href="#none">
+                  <img src="./img/icon_03.png" alt="heart">
+                  <img src="./img/icon_02.png" alt="cart">
+                  <img src="./img/icon_01.png" alt="searh">
+                </a>
+              </div>
+              <h5><a href="#none">피지잡는수분 기름종이 팩트</a></h5>
+              <p>9,000원</p>
+              <div class="event_s">
+                <img src="./img/event_title_best.gif" alt="best">
+                <img src="./img/event_title_new.gif" alt="new">
+                <img src="./img/event_title_coupon.gif" alt="coupon">
+                <img src="./img/event_title_today.gif" alt="today">
+              </div>
+            </li>
+            <li>
+              <a href="#none"><img src="./img/item_05.jpg" alt="안티에이징 파이토플랑크톤 듀오세트"></a>
+              <div class="icon">
+                <a href="#none">
+                  <img src="./img/icon_03.png" alt="heart">
+                  <img src="./img/icon_02.png" alt="cart">
+                  <img src="./img/icon_01.png" alt="searh">
+                </a>
+              </div>
+              <h5><a href="#none">퍼퓸씨드 로즈 바디 미스트</a></h5>
+              <p>12,000원</p>
+              <div class="event_s">
+                <img src="./img/event_title_best.gif" alt="best">
+                <img src="./img/event_title_new.gif" alt="new">
+                <img src="./img/event_title_dc.gif" alt="dc">
+                <img src="./img/event_title_coupon.gif" alt="coupon">
+                <img src="./img/event_title_today.gif" alt="today">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section id="player" class="content">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/D7r192e7ga8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div>
+      <h4>#제주화산토 클레이스틱마스크<br>
+          #제주화산토 프레시 마스크<br>
+          제품 영상 보기</h4>
+      <div><span></span></div>
+      <p>질질 흐르는 두꺼운 머드팩은 그만~~!<br>
+          선스틱 바르듯 슥슥 문지르면<br>
+          얇고 균일하게 발리고<br>
+          퀵하게 건조되어<br>
+          손쉬운 머드팩 관리</p>
+    </div>
+  </section>
+  <section id="funtionSection">
+    <div class="sub_title content">
+      <h3>The Face shop</h3>
+      <p>더페이스샵의 건강한 이야기</p>
+      <div class="slider">
+        <div>
+          <h5>내 피부 고민에 착<br>
+            더 솔루션 더블업 마스크시트</h5>
+          <p>피부 고민 해결을 위해<br>
+            솔루션 성분 함량 2배 업그레이드<br>
+            더 강력해진 더솔루션 더블업 마스크시트
+            </p>
+          <p><a href="#none">자세히 보기</a></p>
+        </div>
+        <div>
+          <h5>메이크업을 녹여버리는~<br>
+            피부에 사르르 셔벗밤 텍스처</h5>
+          <p>메이크업은 한 번에 지우고<br>
+            보들보들 실크결 피부만 말끔하게 남는<br>
+            취향저격 클렌징밤
+            </p>
+          <p><a href="#none">자세히 보기</a></p>
+        </div>
+        <div>
+          <h5>깨끗하고~맑고~촉촉하게!<br>
+            미감수 브라이트 클렌징</h5>
+          <p>깨끗하고~ 맑고~ 촉촉하게<br>
+            쌀뜨물 미용법으로<br>
+            부드러운 보습 클렌징하기
+            </p>
+          <p><a href="#none">자세히 보기</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="review" class="content">
+    <h2>REVIEW</h2>
+    <p>더페이스샵 고객분들의 리얼 리뷰입니다.</p>
+    <ul>
+      <li>
+        <a href="#none"><img src="./img/review_01.jpg" alt="review_01"></a>
+        <img src="./img/ico_point5.gif" alt="point5">
+        <h5><a href="#none">클렌징 오일</a></h5>
+        <span>
+          너무 무겁지 않고 세정력도 좋아요~<br>
+          거기다 용량도 커서 넘 좋아요^^<br>
+          세일기간에 사면 최고입니다!ㅎㅎ
+        </span>
+        <p>KA-123290***</p>
+        <span>2021-04-22</span>
+      </li>
+      <li>
+        <a href="#none"><img src="./img/review_02.jpg" alt="review_01"></a>
+        <img src="./img/ico_point5.gif" alt="point5">
+        <h5><a href="#none">너무 좋아요</a></h5>
+        <span>이틀에 한번씩 마스크팩을 하고 있는데<br>
+          세일해서 많이 구매했답니다 감사합니다
+        </span>
+        <p>최****</p>
+        <span>2020-12-31</span>
+      </li>
+      <li>
+        <a href="#none"><img src="./img/review_03.jpg" alt="review_01"></a>
+        <img src="./img/ico_point5.gif" alt="point5">
+        <h5><a href="#none">아주 좋아요~</a></h5>
+        <span>잦은 염색으로 머리카락이 많이 푸석푸석해져서 구매했는데요. <br>
+          머릿결이 촉촉해지는게 아주 좋아요~ <br>
+          향도 너무 좋구요~ 믿고 쓰는 더페이스샵 제품입니다~^^<br>
+        </span>
+        <p>조****</p>
+        <span>2020-12-25</span>
+      </li>
+      <li>
+        <a href="#none"><img src="./img/review_04.jpg" alt="review_01"></a>
+        <img src="./img/ico_point5.gif" alt="point5">
+        <h5><a href="#none">잘 받았어요</a></h5>
+        <span>어디에 놀러갈 때 휴대용으로 사이즈도<br>
+           괜찮은 것 같아요 향도 좋아요 최고요
+        </span>
+        <p>정****</p>
+        <span>2020-12-24</span>
+      </li>
+    </ul>
+    <div class="more">
+      <a href="#none">더보기</a>
+    </div>
+  </section>
+  <section id="insta" class="content">
+    <img src="./img/insta.gif" alt="insta">
+    <ul>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+      <li><a href="#none">
+        <img src="./img/twitter.webp" alt="">
+        <img src="./img/pinterest.webp" alt="">
+        <img src="./img/facebook.webp" alt="">
+        </a>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <div class="content">
+      <ul>
+        <li><a href="#none">회사소개</a></li>
+        <li><a href="#none">이용약관</a></li>
+        <li><a href="#none">개인정보처리방침</a></li>
+        <li><a href="#none">이용안내</a></li>
+      </ul>
+      <div class="contect">
+        <ul>
+          <li class="cs">
+            <h5>CS CENTER</h5>
+            <p>00-000-000</p>
+            <span>MON-FRI 10:00~18:00<br>
+                  LUNCH 12:00~13:30<br>
+                  SAT/SUN/HOLIDAY OFF</span>
+          </li>
+          <li>
+            <h6>BANK INFOMATION</h6>
+            <p>신한은행 <span>000-000000-00-000</span></p>
+            <p>예금주 강화원</p>
+            <a href="#none"><img src="./img/imgIbkMark.gif" alt=""></a>
+          </li>
+          <li>
+            <h6>COMPANY INFO</h6>
+            <p>
+              COMPANY : 하우원 주식회사 <span>대표자 : KANG HWA WON</span><span>CS CENTER : 00-000-0000</span><br>
+              FAX : <span>ADDRESS : 인천광역시 서구 원당대로 685번길 30</span><br>
+              마케팅∙제휴┃입점∙수출 문의 : corn1128@naver.com<br>
+              사업자등록번호 : 000-00-000 <a href="none">[사업자정보확인]</a><br>
+              통신판매업신고 : 0000-인천서구-00000 개인정보관리책임자 : 강화원<br>
+              Copyright © 2019 더페이스샵. All rights reserved.
+            </p>
+            <p>
+              ※ 무단 복제나 도용은 저작권법(97조 5항)에 의해 금지되어 있습니다. 제작물의 저작권은 당사에 있으며 위반시 처벌됩니다.
+            </p>
+            <ul>
+              <li><img src="./img/footerIcon_01.gif" alt=""></li>
+              <li><img src="./img/footerIcon_02.gif" alt=""></li>
+              <li><img src="./img/footerIcon_03.gif" alt=""></li>
+              <li><img src="./img/footerIcon_04.gif" alt=""></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
